@@ -3,22 +3,80 @@
 <head>
   <title>HTML 도전기</title>
   <meta charset="utf-8">
+  <style>
+    a{
+      color:gray;
+      text-decoration: none;
+    }
+    #head{
+      border-bottom:3px solid gray;
+      text-align: center;
+      padding:10px;
+      margin:0px;
+    }
+    #ref{
+      padding:10px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns:250px 250px;
+      justify-content: center;
+      margin:30px;
+    }
+    #grid div{
+      text-align:center;
+    }
+    body{
+      text-align:center;
+      margin:0;
+    }
+    @media(max-width:450px){
+      img{
+        display:none;
+      }
+      h1,h2{
+        font-size:1em;
+      }
+      #head{
+        border:none;
+      }
+      #grid{
+        display:block;
+        margin:0;
+      }
+      #grid div{
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <h1>민주의 신명나는 web 도전기</h1>
-  ref : <a href="https://opentutorials.org/course/3084/18438" target="__blank">생활코딩 : 웹</a>
-    <h2>HTML</h2>
+  <div id="head">
+    <h1>민주의 신명나는 web 도전기</h1>
+    <div id="ref">
+      ref : <a href="https://opentutorials.org/course/3084/18438" target="__blank">생활코딩 : 웹</a>
+    </div>
+  </div>
+  <div id="grid">
+    <div>
+      <h2>HTML</h2>
       <ol>
         <li><a href="explanation.html" target="__blank">HTML이란</a></li>
         <li><a href="tags.html" target="__blank">TAGS</a></li>
         <li><a href="impression.html" target="__blank">소감</a></li>
       </ol>
-    <h2>web</h2>
+    </div>
+    <div>
+      <h2>web</h2>
       <ol>
         <li><a href="web.html" target="__blank">WEB이란</a></li>
         <li><a href="https://opentutorials.org/course/3084/18893" target="__blank">윈도우에 웹서버열기(Apache)</a></li>
       </ol>
-    </p><img src="adventure.jpg" width=50%></p>
+    </div>
+  </div>
+    <img src="adventure.jpg" width=30% align="center">
 
 </body>
 </html>
